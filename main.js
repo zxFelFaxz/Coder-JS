@@ -7,7 +7,7 @@ const precioBebida = 600;
 
 // Funciones
 
-function calcularPrecio(pedido, cantidad, tamanio, cmCubicos) {
+function calcularPrecio(pedido, cantidad, tamanio) {
     let precio = 0;
     switch (pedido) {
         case 'pizza':
