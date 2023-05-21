@@ -50,7 +50,7 @@ function solicitarPedido() {
         cantidad = prompt(`Ofrecemos bebidas de 1 litro ¿Cuántas unidades de ${pedido} desea?`);
         console.log(`El costo de ${cantidad} ${pedido} es de ${calcularPrecio(pedido, cantidad)}`);
         alert(`El costo de ${cantidad} ${pedido} es de $${calcularPrecio(pedido, cantidad)}`);
-        document.write("<h2> Cotización de: "+ cantidad +" "+ pedido +" "+ "de " + " cm3" +"</h2>");
+        document.write("<h2> Cotización de: "+ cantidad +" "+ pedido +" "+ "de " + " un litro" +"</h2>");
         document.write("<h4> El costo es de $" + calcularPrecio(pedido, cantidad) + "</h4>");
     }
     else if (pedido === 'salir') {
