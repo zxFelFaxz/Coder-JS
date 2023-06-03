@@ -2,7 +2,7 @@
 class Producto {
     //Funcion constructora
     constructor(nombre, descripcion,precio){
-        this.id = generarID;
+        this.id = generarID();
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
@@ -38,10 +38,11 @@ function encontrarPorId(hallarId){
 }
 
 //Buscar productos por nombre, puede devolver varios productos
-function hallarPorNombre(nom){
+function hallarPorNombre(n){
     let producto = [];
-    for( let i = 0; arrayProductos.length; i++){
-        if (arrayProductos[i].nombre == nom) producto.push(arrayProductos[i]);
+    for(let i = 0; i < arrayProductos.length; i++){
+        if (arrayProductos[i].nombre == n) {
+            producto.push(arrayProductos[i])};
     }
     return producto;
 }
@@ -84,12 +85,12 @@ function comprarProductoPorId(id){
 //Solo es false cuando se quiere salir del bucle.
 let proceso = true;
 //Menu
-const menu = `1-Crear un producto para agregar a la lista de productos.\n
+const menu = `1-Crear un producto para agregar a la lista.\n
               2-Mostrar lista de productos.\n
-              3-Buscar producto por ID\n
-              4-Filtro de productos.\n
-              5-Comprar algún producto.\n
-              6-Encontrar productos por nombre\n
+              3-Encontrar productos por nombre\n
+              4-Buscar producto por ID\n
+              5-Ordenar productos.\n
+              6-Comprar algún producto.\n
               0-Salir.`;
 
 //Ciclo while, se sale con "0"
@@ -107,10 +108,14 @@ while(proceso){
             mostrarProducto();
             break;
         case 3:
+            let encontrarNombre = prompt("Ingrese el nombre del producto.");
+            console.log(hallarPorNombre(encontrarNombre));
+            break;
+        case 4:
             let encontrarId = parseInt(prompt("Ingrese el ID del producto"));
             console.log(encontrarPorId(encontrarId));
             break;
-        case 4:
+        case 5:
             let opcFiltro = parseInt(prompt(`1-Ordenar por mayor.\n
                                              2-Ordenar por menor.`));
             if (opcFiltro == 1){
@@ -123,21 +128,17 @@ while(proceso){
                 alert("Por favor ingrese 1 o 2")
             }
             break;
-        case 5:
+        case 6:
             let comprarPorId = parseInt(prompt("Ingrese el ID del producto a comprar."));
             if (arrayProductos.includes(encontrarPorId(comprarPorId))){
                 alert("El precio con IVA es " + encontrarPorId(comprarPorId).calcularIVA());
                 let confirmarCompra = prompt("¿Está seguro?\n Ingrese si o no").toUpperCase();
                 if (confirmarCompra == "SI") console.log(comprarProductoPorId(comprarPorId));
-                else if (confirmarCompra == "NO") console.log("Muchas gracias de todas");
+                else if (confirmarCompra == "NO") alert("Lamentamos su elección");
             }
             else{
                 console.log("ID no encontrado, intente nuevamente")
             }
-            break;
-        case 6:
-            let encontrarNombre = prompt("Ingrese el nombre del producto.");
-            console.log(hallarPorNombre(encontrarNombre));
             break;
         case 0:
             proceso = false;
