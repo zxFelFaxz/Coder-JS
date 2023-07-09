@@ -162,7 +162,7 @@ const quitarDelCarrito = (id) => {
 
 const filtrarProductos = () => {
     const searchTerm = inputSearch.value.trim().toLowerCase();
-    const productosFiltrados = data.producto.filter(producto => producto.nombre.toLowerCase().includes(searchTerm));
+    const productosFiltrados = data.producto.filter(producto => producto.nombre.toLowerCase().indexOf(searchTerm) !== -1);
   
     contenedorProductos.innerHTML = '';
   
