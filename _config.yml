@@ -1,0 +1,22 @@
+# Configuración básica
+title: Mi Sitio Jekyll
+description: Descripción de mi sitio
+baseurl: ""
+url: ""
+
+# Configuración del tema
+theme: jekyll-theme-primer
+
+# Otras configuraciones opcionales
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Opciones de construcción y generación
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
