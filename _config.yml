@@ -1,6 +1,6 @@
 # Configuración básica
-title: Mi Sitio Jekyll
-description: Descripción de mi sitio
+title: CoderH JS
+description: Mi sitio Jekyll de CoderH JS
 baseurl: ""
 url: ""
 
@@ -11,12 +11,3 @@ theme: jekyll-theme-primer
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-# Opciones de construcción y generación
-markdown: kramdown
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-
