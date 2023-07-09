@@ -1,0 +1,100 @@
+{
+    "producto": [
+    {
+        "id": 1,
+        "nombre": "Empanada",
+        "descripcion": "Carne suave",
+        "precio": 400,
+        "cantidad": 1,
+        "img": "img/Carne-Suave.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Empanada",
+        "descripcion": "Verdura",
+        "precio": 350,
+        "cantidad": 1,
+        "img": "img/Empanada-Verdura.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Empanada",
+        "descripcion": "Jamon y Queso",
+        "precio": 400,
+        "cantidad": 1,
+        "img": "img/Empanada-JYQ.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Empanada",
+        "descripcion": "Soja texturizada",
+        "precio": 300,
+        "cantidad": 1,
+        "img": "img/Empanada-Soja.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Empanada",
+        "descripcion": "Seitan",
+        "precio": 320,
+        "cantidad": 1,
+        "img": "img/Empanada-Seitan.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Pizza",
+        "descripcion": "Muzzarella",
+        "precio": 2000,
+        "cantidad": 1,
+        "img": "img/Pizza-Muzzarella.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Pizza",
+        "descripcion": "Jamon",
+        "precio": 2500,
+        "cantidad": 1,
+        "img": "img/Pizza-Jamon.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Pizza",
+        "descripcion": "Napolitana",
+        "precio": 2800,
+        "cantidad": 1,
+        "img": "img/Pizza-Napolitana.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Pizza",
+        "descripcion": "MuzzaVegana",
+        "precio": 2000,
+        "cantidad": 1,
+        "img": "img/Pizza-MuzzaVegana.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Pizza",
+        "descripcion": "NapoVegana",
+        "precio": 2500,
+        "cantidad": 1,
+        "img": "img/Pizza-NapoVegana.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Bebida",
+        "descripcion": "Gaseosa 2Lts",
+        "precio": 500,
+        "cantidad": 1,
+        "img": "img/Gaseosa-2L.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Bebida",
+        "descripcion": "Agua 2Lts",
+        "precio": 300,
+        "cantidad": 1,
+        "img": "img/Agua-2L.jpg"
+    }
+]
+}

@@ -11,15 +11,23 @@
 <body class="container">
     <h1 class="text-center">La Pizzeria</h1>
     <hr>
+        <p>    
+            <input type="search" size="30" id="inputSearch"placeholder="Pizza, Empanada o Bebida">  
+        </p>
+    <hr>
     <div id="contenedorProductos" class="row"></div>
     <hr>
     <h2 class="text-center">Carrito</h2>
     <h3>El total de su compra es : <span id="total"></span></h3>
 
-    <button class="btn colorBoton" id="verCarrito"> Mostrar Carrito</button>
-    <button class="btn colorBoton" id="vaciarCarrito">Borrar Carrito</button>
-    <div class="row" id="contenedorCarrito"></div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <script src="main.js"></script>
+        <button class="btn colorBoton" id="verCarrito"> Mostrar Carrito</button>
+        <button class="btn colorBoton" id="vaciarCarrito">Borrar Carrito</button>
+        <button class="btn colorBoton" id="finalizaCompra">Finalizar Compra</button>
+    <div class="row" id="contenedorCarrito">
+        <!-- Aqui se mostrara el carrito -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="main.js"></script>    
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
